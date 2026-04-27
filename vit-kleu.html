@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vit kleu — Личное дело</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('https://raw.githubusercontent.com/iris32-png/-1/main/amg/crumpled-old-paper-texture-background-brown-folded-parchment-vintage-paper-sheet-with-space-for-text-vector.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: 'Courier New', 'Georgia', monospace;
+            color: #2c2418;
+            padding: 2rem;
+        }
+
+        .document {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: rgba(245, 240, 228, 0.96);
+            border: 2px solid #8b6b4d;
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+            padding: 2rem 2.2rem;
+            position: relative;
+        }
+
+        .stamp {
+            position: absolute;
+            bottom: 1.2rem;
+            right: 1.8rem;
+            text-align: center;
+            opacity: 0.85;
+            z-index: 10;
+        }
+        .stamp img {
+            max-width: 120px;
+            border-radius: 50%;
+            background: transparent;
+            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
+            transform: rotate(-30deg);
+        }
+        .stamp p {
+            font-size: 0.7rem;
+            color: #8b3c2c;
+            letter-spacing: 1px;
+            margin-top: 4px;
+            font-family: monospace;
+        }
+
+        .wiki-header {
+            border-bottom: 2px solid #8b6b4d;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .wiki-header h1 {
+            font-size: 2.4rem;
+            font-weight: normal;
+            font-family: 'Times New Roman', serif;
+            color: #2c1a0c;
+        }
+        .serial-number {
+            font-family: monospace;
+            font-size: 0.8rem;
+            color: #6b4a2c;
+        }
+
+        .infobox {
+            float: right;
+            width: 280px;
+            background: #fef7e8;
+            border: 2px solid #b0906c;
+            padding: 0.8rem;
+            margin: 0 0 1rem 1.8rem;
+            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .infobox-title {
+            font-weight: bold;
+            text-align: center;
+            background: #e2d4bd;
+            padding: 0.3rem;
+            margin: -0.8rem -0.8rem 0.8rem -0.8rem;
+            border-bottom: 2px solid #b0906c;
+            font-size: 1.2rem;
+        }
+        .infobox-image img {
+            max-width: 100%;
+            border: 2px solid #b0906c;
+        }
+        .infobox-row {
+            padding: 0.3rem 0;
+            border-bottom: 1px dotted #c8b28c;
+        }
+        .infobox-label {
+            font-weight: bold;
+            display: inline-block;
+            width: 120px;
+            color: #5a3e28;
+        }
+
+        .wiki-content h2 {
+            font-size: 1.4rem;
+            border-left: 4px solid #8b6b4d;
+            padding-left: 0.8rem;
+            margin: 1.5rem 0 0.8rem;
+            color: #3a2818;
+        }
+        .wiki-content p {
+            margin-bottom: 0.8rem;
+            text-align: justify;
+        }
+        .wiki-content ul {
+            margin: 0.5rem 0 0.8rem 2rem;
+        }
+        a {
+            color: #7a4a2a;
+            text-decoration: none;
+            border-bottom: 1px dotted #b0906c;
+        }
+
+        .footer-sign {
+            margin-top: 2.5rem;
+            padding-top: 1rem;
+            border-top: 1px dashed #b0906c;
+            font-size: 0.75rem;
+            display: flex;
+            justify-content: space-between;
+            font-family: monospace;
+            color: #5a3e28;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        @media (max-width: 700px) {
+            .infobox {
+                float: none;
+                width: 100%;
+                margin: 0 0 1rem;
+            }
+            .stamp {
+                position: relative;
+                bottom: auto;
+                right: auto;
+                margin-top: 1rem;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="document">
+    <div class="wiki-header">
+        <h1>Личное дело № VK–042</h1>
+        <div class="serial-number">учётная запись · 2020</div>
+    </div>
+
+    <div class="infobox">
+        <div class="infobox-title">vit kleu</div>
+        <div class="infobox-image">
+            <img src="https://placehold.co/400x400/8b6b4d/f5e5cc?text=vit+kleu" alt="vit kleu">
+            <div style="font-size:0.7rem; text-align:center;">опознавательный знак</div>
+        </div>
+        <div class="infobox-row"><span class="infobox-label">Пол:</span> мужской</div>
+        <div class="infobox-row"><span class="infobox-label">Дата рождения:</span> 2008 г.</div>
+        <div class="infobox-row"><span class="infobox-label">Рост:</span> 175 см</div>
+        <div class="infobox-row"><span class="infobox-label">Дата создания уч. записи:</span> 21 июля 2020 г.</div>
+        <div class="infobox-row"><span class="infobox-label">Статус:</span> действующий</div>
+        <div class="infobox-row"><span class="infobox-label">Сфера:</span> игры, стримы</div>
+        <div class="infobox-row"><span class="infobox-label">Платформа:</span> YouTube</div>
+    </div>
+
+    <div class="wiki-content">
+        <h2>✧ Учётная запись</h2>
+        <p><b>vit kleu</b> — видеоблогер и стример, известный под псевдонимом <b>poNYAwKA</b>. Родился в 2008 году, рост — 175 см. Учётная запись создана 21 июля 2020 года. Активен в игровой среде, преимущественно Terraria, Forager, Minecraft. Участник совместных проектов с Iris и проектом triO_V.I.K.</p>
+
+        <h2>✧ Любимая еда и напитки</h2>
+        <ul>
+            <li><b>Еда:</b> макароны, котлеты с пюрешкой</li>
+            <li><b>Напитки:</b> чай, кофе три в одном, газировка, <span style="letter-spacing: 2px;">ПИИИвооооооооооооооо</span></li>
+        </ul>
+
+        <h2>✧ Деятельность</h2>
+        <p>vit kleu ведёт <a href="https://www.youtube.com/@p0nyawka" target="_blank">канал на YouTube</a>, где публикует записи стримов, прохождения игр и общение с аудиторией. Характеризует себя как «типичного, ничем не примечательного 17-летнего брони и студента», отмечая при этом опыт ведения канала более 5 лет.</p>
+
+        <h2>✧ Сотрудничество</h2>
+        <p>Поддерживает творческие связи с витубером <b>Iris</b> и участвует в общем проекте <b>triO_V.I.K</b>. Открыт к коллаборациям и новым форматам.</p>
+
+        <h2>✧ Личные заметки</h2>
+        <p>По собственному признанию, vit kleu может быть токсичен, но утверждает, что к нему достаточно «найти правильный подход». Мечтает о развитии канала и увеличении аудитории.</p>
+    </div>
+
+    <div class="footer-sign">
+        <span>дата выдачи дела: 27 апреля 2026 г.</span>
+        <span><a href="archive.html" style="color:#5a3e28;">← вернуться в архив</a></span>
+        <span>регистратор: архив VT‑3</span>
+    </div>
+
+    <div class="stamp">
+        <img src="https://raw.githubusercontent.com/iris32-png/-1/main/amg/seedream-4.5_%D0%BA%D1%80%D1%83%D0%B3%D0%BB%D0%B0%D1%8F_%D0%B3%D0%B5%D1%80%D0%B1%D0%BE%D0%B2%D0%B0%D1%8F_%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D1%8C_%D1%84%D0%BE%D1%80%D0%BC%D0%B0_%D0%BA%D1%80%D1%83%D0%B3%D0%B0_%D1%86%D0%B2%D0%B5%D1%82_%D1%87%D0%B5-1.png" alt="Гербовая печать">
+        <p>◆ УДОСТОВЕРЕНИЕ ◆</p>
+    </div>
+</div>
+</body>
+</html>
