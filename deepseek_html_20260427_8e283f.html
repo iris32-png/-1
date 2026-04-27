@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музыка — Iris</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f8f9fa;
+            font-family: 'Georgia', 'Times New Roman', 'Segoe UI', serif;
+            color: #202122;
+            line-height: 1.6;
+            padding: 1.5rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border: 1px solid #a2a9b1;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 1.8rem 2rem;
+        }
+
+        .wiki-header {
+            border-bottom: 1px solid #a2a9b1;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .wiki-header h1 {
+            font-size: 2.2rem;
+            font-weight: normal;
+            font-family: 'Linux Libertine', 'Georgia', serif;
+            margin-bottom: 0.2rem;
+        }
+
+        .wiki-header a {
+            color: #0645ad;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .wiki-header a:hover {
+            text-decoration: underline;
+        }
+
+        .player-section {
+            margin-bottom: 2rem;
+        }
+
+        .track-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .track-item {
+            background: #f8f9fa;
+            border: 1px solid #eaecf0;
+            margin-bottom: 0.8rem;
+            padding: 0.8rem 1rem;
+            border-radius: 4px;
+        }
+
+        .track-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: #0645ad;
+        }
+
+        audio {
+            width: 100%;
+            margin-top: 0.3rem;
+        }
+
+        .footer-note {
+            margin-top: 1.5rem;
+            font-size: 0.8rem;
+            color: #54595d;
+            text-align: center;
+            border-top: 1px solid #eaecf0;
+            padding-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="wiki-header">
+        <h1>Музыка Iris</h1>
+        <a href="index.html">← Биография</a>
+    </div>
+
+    <div class="player-section">
+        <p>Мелодии, созданные Iris. Нажмите на кнопку воспроизведения.</p>
+
+        <ul class="track-list">
+            <li class="track-item">
+                <div class="track-title">Трек 1</div>
+                <audio controls preload="none">
+                    <source src="https://drive.google.com/uc?export=download&id=1gmRtjr0Igy5SnJpBhU2gYa0vM4wvHFzc" type="audio/mpeg">
+                    Ваш браузер не поддерживает аудиоплеер.
+                </audio>
+            </li>
+            <li class="track-item">
+                <div class="track-title">Трек 2</div>
+                <audio controls preload="none">
+                    <source src="https://drive.google.com/uc?export=download&id=1162hWllQfMbMlICsPr-bZUmpPLLVzGfv" type="audio/mpeg">
+                    Ваш браузер не поддерживает аудиоплеер.
+                </audio>
+            </li>
+            <li class="track-item">
+                <div class="track-title">Трек 3</div>
+                <audio controls preload="none">
+                    <source src="https://drive.google.com/uc?export=download&id=13bSNyguanAwSoeHUW_cXH5lUm42xeSwb" type="audio/mpeg">
+                    Ваш браузер не поддерживает аудиоплеер.
+                </audio>
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer-note">
+        Iris · мелодии для тихих моментов
+    </div>
+</div>
+</body>
+</html>
